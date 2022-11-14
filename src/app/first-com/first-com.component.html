@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="text-center">Enter user details</h1>
+   <form>
+    <input type="text"   [formControl]="name">
+    <input type="email"   [formControl]="email">
+    <input type="button" (click)="getData()" value="Submit">
+   </form>
+</div>
+
+<div class="child">
+    <app-second-com [name]="name" [email]="email"></app-second-com>
+</div>

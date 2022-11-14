@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Local-shop';
+  tabs = [1, 2];
+	counter = this.tabs.length + 1;
+	active: any;
 }
